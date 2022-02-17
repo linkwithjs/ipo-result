@@ -1,0 +1,48 @@
+.floaters {
+  display: flex;
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  justify-content: flex-end;
+  align-items: center;
+  width: 400px;
+  transition: 0.2s;
+  background-color: transparent;
+}
+
+.floating__button {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: 10px;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid #2d2dd8;
+  transition: 0.5s;
+}
+
+.floating__card a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.floating__card .bulk__check,
+.floating__card .saved__accounts {
+  height: 50%;
+  width: 100%;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 770px) {
+  .floaters {
+    bottom: 1%;
+  }
+}
